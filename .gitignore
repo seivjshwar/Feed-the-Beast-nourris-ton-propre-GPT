@@ -1,7 +1,16 @@
-data/
+data/*
+!data/validation.jsonl
+!data/VALIDATION_SOURCES.md
 *.pt
 *.bin
 __pycache__/
 .venv/
 .ipynb_checkpoints/
 .DS_Store
+corpus/cache/
+example_data/
+prepared/
+runs/
+__pycache__/
+*.pyc
+.pytest_cache/
