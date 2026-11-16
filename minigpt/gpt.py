@@ -120,9 +120,72 @@ class GPT(nn.Module):
             nxt = torch.multinomial(probs, 1)
             idx = torch.cat([idx, nxt], dim=1)
         return idx
+
 if __name__ == "__main__":
-    model = GPT().to(device)
-    print(f"{sum(p.numel() for p in model.parameters())/1e6:.2f} M paramètres")
-    x, y = get_batch("train")
-    logits, loss = model(x, y)
-    print(logits.shape, f"loss initiale : {loss.item():.3f} (attendu ≈ {math.log(vocab_size):.3f})")
+    @torch.no_grad()
+    def estimate_loss(model, iters=50):
+        model.eval()
+        out = {}
+        for split in ("train", "val"):
+            losses = [model(*get_batch(split))[1].item() for _ in range(iters)]
+            out[split] = sum(losses) / len(losses)
+        model.train()
+        return out
+
+
+    @torch.no_grad()
+    def val_bpb(model):
+        """BPB sur toute la validation : somme des -log p (en nats) / (ln 2 × nombre d'octets)."""
+        model.eval()
+        nll, n_tok = 0.0, 0
+        for i in range(0, len(val_data) - 1, block_size):
+            x = val_data[i : i + block_size].unsqueeze(0).to(device)
+            y = val_data[i + 1 : i + block_size + 1].unsqueeze(0).to(device)
+            x = x[:, : y.shape[1]]
+            logits, _ = model(x)
+            nll += F.cross_entropy(logits.view(-1, vocab_size), y.view(-1), reduction="sum").item()
+            n_tok += y.numel()
+        model.train()
+        n_bytes = len(decode(val_data[1 : n_tok + 1].tolist()).encode("utf-8"))
+        return nll / (math.log(2) * n_bytes)
+
+
+    if __name__ == "__main__":
+        import json, time
+        model = GPT().to(device)
+        print(f"{sum(p.numel() for p in model.parameters())/1e6:.2f} M paramètres")
+        optimizer = torch.optim.AdamW(model.parameters(), lr=lr)
+        history = []
+        t0 = time.time()
+        for step in range(max_iters + 1):
+            if step % 250 == 0:
+                l = estimate_loss(model)
+                history.append({"step": step, **l})
+                print(f"pas {step:5d} | train {l['train']:.3f} | val {l['val']:.3f} | {time.time()-t0:.0f} s")
+            x, y = get_batch("train")
+            logits, loss = model(x, y)
+            optimizer.zero_grad(set_to_none=True)   # 1. remettre les gradients à zéro
+            loss.backward()                         # 2. rétropropagation (comme dans ton autograd !)
+            optimizer.step()                        # 3. faire un pas d'optimisation
+
+        bpb = val_bpb(model)
+        print(f"BPB validation : {bpb:.4f}")
+        torch.save(model.state_dict(), "minigpt/gpt_moliere.pt")
+
+        # 5 échantillons
+        with open("minigpt/echantillons.txt", "w", encoding="utf-8") as f:
+            for k in range(5):
+                torch.manual_seed(k)
+                start = torch.tensor([encode("\n")], device=device)
+                txt = decode(model.generate(start, 400)[0].tolist())
+                print(f"\n=== Échantillon {k+1} ===\n{txt}")
+                f.write(f"=== Échantillon {k+1} ===\n{txt}\n\n")
+
+        # courbe de loss
+        json.dump({"history": history, "bpb_val": bpb}, open("minigpt/gpt_moliere_log.json", "w"), indent=1)
+        import matplotlib.pyplot as plt
+        plt.plot([h["step"] for h in history], [h["train"] for h in history], label="train")
+        plt.plot([h["step"] for h in history], [h["val"] for h in history], label="validation")
+        plt.xlabel("pas"); plt.ylabel("loss (nats)"); plt.title("Mini-GPT sur Molière"); plt.legend()
+        plt.savefig("minigpt/courbe_loss.png", dpi=120)
+        print("courbe enregistrée : minigpt/courbe_loss.png")
