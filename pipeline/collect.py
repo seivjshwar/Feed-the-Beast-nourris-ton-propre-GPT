@@ -167,19 +167,47 @@ def parse_seance(xml_bytes):
     return date, paras
 
 
+def zip_ok(path):
+    try:
+        with zipfile.ZipFile(path) as z:
+            return z.testzip() is None
+    except zipfile.BadZipFile:
+        return False
+
+
+def download_resume(url, path, tries=40):
+    """Le serveur de l'Assemblée coupe souvent la connexion en cours de route : on reprend le
+    téléchargement là où il s'est arrêté (en-tête HTTP Range) au lieu de tout recommencer."""
+    import requests
+    for k in range(tries):
+        done = path.stat().st_size if path.exists() else 0
+        headers = {"Range": f"bytes={done}-"} if done else {}
+        try:
+            with requests.get(url, headers=headers, stream=True, timeout=120) as r:
+                if r.status_code == 416:      # déjà complet
+                    return
+                r.raise_for_status()
+                mode = "ab" if done and r.status_code == 206 else "wb"
+                with open(path, mode) as f:
+                    for chunk in r.iter_content(1 << 20):
+                        f.write(chunk)
+            if zip_ok(path):
+                return
+        except Exception as e:  # noqa: BLE001
+            log(f"  coupure ({done/1e6:.0f} Mo reçus) : {repr(e)[:80]} -> reprise {k + 1}")
+            time.sleep(3)
+    raise RuntimeError(f"téléchargement impossible : {url}")
+
+
 def an():
     import requests
     C.DOWNLOADS.mkdir(parents=True, exist_ok=True)
     out, got, n_files, n_skip = [], 0, 0, 0
     for k, url in enumerate(C.AN_URLS):
         path = C.DOWNLOADS / f"an_{k}.zip"
-        if not path.exists():
+        if not path.exists() or not zip_ok(path):
             log("téléchargement", url)
-            with requests.get(url, stream=True, timeout=600) as r:
-                r.raise_for_status()
-                with open(path, "wb") as f:
-                    for chunk in r.iter_content(1 << 20):
-                        f.write(chunk)
+            download_resume(url, path)
         with zipfile.ZipFile(path) as z:
             for name in z.namelist():
                 if not name.endswith(".xml"):
