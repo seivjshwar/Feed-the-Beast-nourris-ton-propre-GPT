@@ -29,9 +29,27 @@ class Value:
         
         return out
 
+    def backward(self):
+        topo = []
+        visited = set()
+
+        def build(v):
+            if v not in visited:
+                visited.add(v)
+                for parent in v._prev:
+                    build(parent)   # d'abord les parents
+                topo.append(v)      # puis le nombre lui-même
+
+        build(self)
+
+        self.grad = 1.0             # le point de départ
+        for v in reversed(topo):
+            v._backward()           # appeler la fonction qui transmet le gradient
 
 if __name__ == "__main__":
     a = Value(2.0)
     b = Value(-3.0)
     c = a * b + Value(10.0)
-    print(c, c._op, c._prev)
+    c.backward()
+    print("a.grad =", a.grad)   # attendu : -3.0
+    print("b.grad =", b.grad)   # attendu :  2.0
