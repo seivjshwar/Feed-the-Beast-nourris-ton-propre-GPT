@@ -1,3 +1,4 @@
+import math
 class Value:
 
     def __init__(self, data, _children=(), _op=''):
@@ -11,7 +12,9 @@ class Value:
         return f"Value(data={self.data})"
     
     def __add__(self, other):
+        other = other if isinstance(other, Value) else Value(other)
         out = Value(self.data + other.data, (self, other), '+')
+        
 
         def _backward():
             self.grad += out.grad
@@ -21,12 +24,23 @@ class Value:
         return out
 
     def __mul__(self, other):
+        other = other if isinstance(other, Value) else Value(other)
         out= Value(self.data * other.data, (self, other), '*')
         def _backward():
             self.grad += other.data * out.grad
             other.grad += self.data * out.grad
         out._backward = _backward
-        
+
+        return out
+
+    def tanh(self):
+        t = math.tanh(self.data)
+        out = Value(t, (self,), 'tanh')     # un seul parent : lui-même
+
+        def _backward():
+            self.grad += (1-t**2) * out.grad              # la règle : (1 - t**2) × out.grad
+        out._backward = _backward
+
         return out
 
     def backward(self):
