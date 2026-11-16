@@ -51,6 +51,7 @@ budget. La courbe du brut reste au-dessus des deux autres pendant tout l'entraî
 **3. Déduplication, filtres qualité, données personnelles (+0,0004, nettoyé → complet) :
 aucun effet mesurable.** L'écart est en dessous du bruit d'un entraînement à graine unique.
 Explications :
+
 - les sources qui pèsent le plus (Wikipédia, Assemblée, presse) sont déjà propres et uniques ;
   la dédup n'y retire presque rien (3 quasi-doublons sur 56 000 pages FineWeb-2) ;
 - là où elle agit, son effet est compensé par la répétition : Gutenberg perd 214 doublons exacts

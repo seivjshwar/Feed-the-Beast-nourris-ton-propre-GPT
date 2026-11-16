@@ -50,6 +50,7 @@ Tokenizer : `87d7c302f441bf6e66aaa27dd5bffcfbd338d61ec444d8de62d5307c0c37a832`
 
 ## Traitement
 Pipeline reproductible en une commande. Volumes à chaque étape dans `pipeline/STATS.md`.
+
 1. **Encodage** : ftfy (apostrophes typographiques conservées) ; 8 100 documents réparés.
 2. **Langue** : fastText lid.176, français avec probabilité ≥ 0,65, sur le web et Gutenberg ;
    41 454 pages Common Crawl rejetées (88 %). Mesure sur 100 extraits de Common Crawl
