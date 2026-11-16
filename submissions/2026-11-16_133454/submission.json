@@ -1,0 +1,18 @@
+{
+  "participant": "Saifeddine Sayah",
+  "submitted": "2026-11-16T13:34:54+01:00",
+  "kit_version": "1.0",
+  "val_bpb": 1.2341586083694331,
+  "val_bpb_par_genre": {
+    "dialogue": 0.8611814436725734,
+    "encyclopedique": 1.4057410237052714,
+    "litteraire": 1.4729134594611948,
+    "presse": 1.2025783209580996
+  },
+  "dataset_sha256": "fe396987c0c6bdc6000381baf6d63c39c51d3b722e720a49db9760a0f0940682",
+  "tokenizer_sha256": "87d7c302f441bf6e66aaa27dd5bffcfbd338d61ec444d8de62d5307c0c37a832",
+  "dataset_url": "",
+  "note": "pipeline complet : nettoyage, dédup MinHash, filtres Gopher, PII, mélange 4 genres",
+  "device": "Tesla T4",
+  "train_time_s": 735.3
+}

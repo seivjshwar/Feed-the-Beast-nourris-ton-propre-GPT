@@ -1,0 +1,19 @@
+{
+  "kit_version": "1.0",
+  "tokenizers_version": "0.23.3",
+  "dataset_sha256": "fe396987c0c6bdc6000381baf6d63c39c51d3b722e720a49db9760a0f0940682",
+  "tokenizer_sha256": "87d7c302f441bf6e66aaa27dd5bffcfbd338d61ec444d8de62d5307c0c37a832",
+  "n_documents": 67266,
+  "n_tokens": 117510724,
+  "n_bytes": 442757585,
+  "bytes_per_token": 3.7678,
+  "budget_tokens": 100000000,
+  "passes_over_data": 0.851,
+  "inputs": [
+    {
+      "path": "data/mix/complet.jsonl",
+      "size": 448883261
+    }
+  ],
+  "created": "2026-11-16T11:43:04+0000"
+}

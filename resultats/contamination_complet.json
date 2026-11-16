@@ -1,0 +1,1413 @@
+{
+  "n_documents_evalues": 230,
+  "n_signales": 4,
+  "recouvrement_moyen": 0.00844,
+  "signales": [
+    {
+      "id": "validation-0034",
+      "genre": "dialogue",
+      "title": "Séance du vendredi 30 octobre 2026 (CRSANR5L17S2027O1N048), extrait 1",
+      "recouvrement": 0.1467
+    },
+    {
+      "id": "validation-0002",
+      "genre": "dialogue",
+      "title": "Séance du vendredi 02 octobre 2026 (CRSANR5L17S2027O1N005), extrait 1",
+      "recouvrement": 0.1455
+    },
+    {
+      "id": "validation-0007",
+      "genre": "dialogue",
+      "title": "Séance du mardi 06 octobre 2026 (CRSANR5L17S2027O1N009), extrait 2",
+      "recouvrement": 0.1369
+    },
+    {
+      "id": "validation-0018",
+      "genre": "dialogue",
+      "title": "Séance du jeudi 15 octobre 2026 (CRSANR5L17S2027O1N025), extrait 1",
+      "recouvrement": 0.1106
+    }
+  ],
+  "detail": [
+    {
+      "id": "validation-0000",
+      "genre": "dialogue",
+      "title": "Séance du jeudi 01 octobre 2026 (CRSANR5L17S2027O1N002), extrait 1",
+      "recouvrement": 0.0084
+    },
+    {
+      "id": "validation-0001",
+      "genre": "dialogue",
+      "title": "Séance du jeudi 01 octobre 2026 (CRSANR5L17S2027O1N002), extrait 2",
+      "recouvrement": 0.0311
+    },
+    {
+      "id": "validation-0002",
+      "genre": "dialogue",
+      "title": "Séance du vendredi 02 octobre 2026 (CRSANR5L17S2027O1N005), extrait 1",
+      "recouvrement": 0.1455
+    },
+    {
+      "id": "validation-0003",
+      "genre": "dialogue",
+      "title": "Séance du vendredi 02 octobre 2026 (CRSANR5L17S2027O1N005), extrait 2",
+      "recouvrement": 0.0609
+    },
+    {
+      "id": "validation-0004",
+      "genre": "dialogue",
+      "title": "Séance du vendredi 02 octobre 2026 (CRSANR5L17S2027O1N006), extrait 1",
+      "recouvrement": 0.0076
+    },
+    {
+      "id": "validation-0005",
+      "genre": "dialogue",
+      "title": "Séance du vendredi 02 octobre 2026 (CRSANR5L17S2027O1N006), extrait 2",
+      "recouvrement": 0.08
+    },
+    {
+      "id": "validation-0006",
+      "genre": "dialogue",
+      "title": "Séance du mardi 06 octobre 2026 (CRSANR5L17S2027O1N009), extrait 1",
+      "recouvrement": 0.0032
+    },
+    {
+      "id": "validation-0007",
+      "genre": "dialogue",
+      "title": "Séance du mardi 06 octobre 2026 (CRSANR5L17S2027O1N009), extrait 2",
+      "recouvrement": 0.1369
+    },
+    {
+      "id": "validation-0008",
+      "genre": "dialogue",
+      "title": "Séance du mercredi 07 octobre 2026 (CRSANR5L17S2027O1N012), extrait 1",
+      "recouvrement": 0.0809
+    },
+    {
+      "id": "validation-0009",
+      "genre": "dialogue",
+      "title": "Séance du mercredi 07 octobre 2026 (CRSANR5L17S2027O1N012), extrait 2",
+      "recouvrement": 0.066
+    },
+    {
+      "id": "validation-0010",
+      "genre": "dialogue",
+      "title": "Séance du jeudi 08 octobre 2026 (CRSANR5L17S2027O1N013), extrait 1",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0011",
+      "genre": "dialogue",
+      "title": "Séance du jeudi 08 octobre 2026 (CRSANR5L17S2027O1N013), extrait 2",
+      "recouvrement": 0.0166
+    },
+    {
+      "id": "validation-0012",
+      "genre": "dialogue",
+      "title": "Séance du jeudi 08 octobre 2026 (CRSANR5L17S2027O1N015), extrait 1",
+      "recouvrement": 0.0717
+    },
+    {
+      "id": "validation-0013",
+      "genre": "dialogue",
+      "title": "Séance du jeudi 08 octobre 2026 (CRSANR5L17S2027O1N015), extrait 2",
+      "recouvrement": 0.0707
+    },
+    {
+      "id": "validation-0014",
+      "genre": "dialogue",
+      "title": "Séance du vendredi 09 octobre 2026 (CRSANR5L17S2027O1N016), extrait 1",
+      "recouvrement": 0.0397
+    },
+    {
+      "id": "validation-0015",
+      "genre": "dialogue",
+      "title": "Séance du vendredi 09 octobre 2026 (CRSANR5L17S2027O1N016), extrait 2",
+      "recouvrement": 0.0635
+    },
+    {
+      "id": "validation-0016",
+      "genre": "dialogue",
+      "title": "Séance du lundi 12 octobre 2026 (CRSANR5L17S2027O1N018), extrait 1",
+      "recouvrement": 0.0157
+    },
+    {
+      "id": "validation-0017",
+      "genre": "dialogue",
+      "title": "Séance du lundi 12 octobre 2026 (CRSANR5L17S2027O1N018), extrait 2",
+      "recouvrement": 0.0613
+    },
+    {
+      "id": "validation-0018",
+      "genre": "dialogue",
+      "title": "Séance du jeudi 15 octobre 2026 (CRSANR5L17S2027O1N025), extrait 1",
+      "recouvrement": 0.1106
+    },
+    {
+      "id": "validation-0019",
+      "genre": "dialogue",
+      "title": "Séance du jeudi 15 octobre 2026 (CRSANR5L17S2027O1N025), extrait 2",
+      "recouvrement": 0.0578
+    },
+    {
+      "id": "validation-0020",
+      "genre": "dialogue",
+      "title": "Séance du jeudi 15 octobre 2026 (CRSANR5L17S2027O1N026), extrait 1",
+      "recouvrement": 0.0552
+    },
+    {
+      "id": "validation-0021",
+      "genre": "dialogue",
+      "title": "Séance du jeudi 15 octobre 2026 (CRSANR5L17S2027O1N026), extrait 2",
+      "recouvrement": 0.0877
+    },
+    {
+      "id": "validation-0022",
+      "genre": "dialogue",
+      "title": "Séance du lundi 19 octobre 2026 (CRSANR5L17S2027O1N031), extrait 1",
+      "recouvrement": 0.0401
+    },
+    {
+      "id": "validation-0023",
+      "genre": "dialogue",
+      "title": "Séance du lundi 19 octobre 2026 (CRSANR5L17S2027O1N031), extrait 2",
+      "recouvrement": 0.0558
+    },
+    {
+      "id": "validation-0024",
+      "genre": "dialogue",
+      "title": "Séance du mardi 20 octobre 2026 (CRSANR5L17S2027O1N032), extrait 1",
+      "recouvrement": 0.0289
+    },
+    {
+      "id": "validation-0025",
+      "genre": "dialogue",
+      "title": "Séance du mardi 20 octobre 2026 (CRSANR5L17S2027O1N032), extrait 2",
+      "recouvrement": 0.0207
+    },
+    {
+      "id": "validation-0026",
+      "genre": "dialogue",
+      "title": "Séance du mercredi 21 octobre 2026 (CRSANR5L17S2027O1N035), extrait 1",
+      "recouvrement": 0.0753
+    },
+    {
+      "id": "validation-0027",
+      "genre": "dialogue",
+      "title": "Séance du mercredi 21 octobre 2026 (CRSANR5L17S2027O1N035), extrait 2",
+      "recouvrement": 0.0454
+    },
+    {
+      "id": "validation-0028",
+      "genre": "dialogue",
+      "title": "Séance du vendredi 23 octobre 2026 (CRSANR5L17S2027O1N039), extrait 1",
+      "recouvrement": 0.0212
+    },
+    {
+      "id": "validation-0029",
+      "genre": "dialogue",
+      "title": "Séance du vendredi 23 octobre 2026 (CRSANR5L17S2027O1N039), extrait 2",
+      "recouvrement": 0.0266
+    },
+    {
+      "id": "validation-0030",
+      "genre": "dialogue",
+      "title": "Séance du mardi 27 octobre 2026 (CRSANR5L17S2027O1N041), extrait 1",
+      "recouvrement": 0.0092
+    },
+    {
+      "id": "validation-0031",
+      "genre": "dialogue",
+      "title": "Séance du mardi 27 octobre 2026 (CRSANR5L17S2027O1N041), extrait 2",
+      "recouvrement": 0.0453
+    },
+    {
+      "id": "validation-0032",
+      "genre": "dialogue",
+      "title": "Séance du mercredi 28 octobre 2026 (CRSANR5L17S2027O1N042), extrait 1",
+      "recouvrement": 0.013
+    },
+    {
+      "id": "validation-0033",
+      "genre": "dialogue",
+      "title": "Séance du mercredi 28 octobre 2026 (CRSANR5L17S2027O1N042), extrait 2",
+      "recouvrement": 0.0338
+    },
+    {
+      "id": "validation-0034",
+      "genre": "dialogue",
+      "title": "Séance du vendredi 30 octobre 2026 (CRSANR5L17S2027O1N048), extrait 1",
+      "recouvrement": 0.1467
+    },
+    {
+      "id": "validation-0035",
+      "genre": "dialogue",
+      "title": "Séance du vendredi 30 octobre 2026 (CRSANR5L17S2027O1N048), extrait 2",
+      "recouvrement": 0.0626
+    },
+    {
+      "id": "validation-0036",
+      "genre": "encyclopedique",
+      "title": "Angela Tabiri",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0037",
+      "genre": "encyclopedique",
+      "title": "Chawarin Perdpiriyawong",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0038",
+      "genre": "encyclopedique",
+      "title": "Günther Orsoleck",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0039",
+      "genre": "encyclopedique",
+      "title": "Karen Taïeb",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0040",
+      "genre": "encyclopedique",
+      "title": "Khâbaou-Khnoum",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0041",
+      "genre": "encyclopedique",
+      "title": "Kia EV2",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0042",
+      "genre": "encyclopedique",
+      "title": "Le Livre des images",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0043",
+      "genre": "encyclopedique",
+      "title": "Commanderie de Farreyrolles",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0044",
+      "genre": "encyclopedique",
+      "title": "GCR Classe 1A",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0045",
+      "genre": "encyclopedique",
+      "title": "Jack Stratton",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0046",
+      "genre": "encyclopedique",
+      "title": "Jean-Pierre Ondekane",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0047",
+      "genre": "encyclopedique",
+      "title": "Miguel Carvalho",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0048",
+      "genre": "encyclopedique",
+      "title": "Moteur Tigershark",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0049",
+      "genre": "encyclopedique",
+      "title": "Samlar kako",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0050",
+      "genre": "encyclopedique",
+      "title": "Église Saint-Martin de Lys",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0051",
+      "genre": "encyclopedique",
+      "title": "Évêché titulaire de Trapézopolis",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0052",
+      "genre": "encyclopedique",
+      "title": "Aloysius Thanglura",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0053",
+      "genre": "encyclopedique",
+      "title": "Bavy Angelica Michelle",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0054",
+      "genre": "encyclopedique",
+      "title": "Ch. Benoit",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0055",
+      "genre": "encyclopedique",
+      "title": "Stavkirke d'Undredal",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0056",
+      "genre": "encyclopedique",
+      "title": "The NEXROC Group",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0057",
+      "genre": "encyclopedique",
+      "title": "Transports à Tours",
+      "recouvrement": 0.0025
+    },
+    {
+      "id": "validation-0058",
+      "genre": "encyclopedique",
+      "title": "El-Hajj Ahmed el-Jachtimi",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0059",
+      "genre": "encyclopedique",
+      "title": "Ilan Teboul",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0060",
+      "genre": "encyclopedique",
+      "title": "Nicolas Cartelet",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0061",
+      "genre": "encyclopedique",
+      "title": "Ornella Vignola",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0062",
+      "genre": "encyclopedique",
+      "title": "Pangupterus",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0063",
+      "genre": "encyclopedique",
+      "title": "\"Miu\" Natsha Taechamongkalapiwat",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0064",
+      "genre": "encyclopedique",
+      "title": "731e Compagnie de munitions",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0065",
+      "genre": "encyclopedique",
+      "title": "Anatomie des ptérosaures",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0066",
+      "genre": "encyclopedique",
+      "title": "Arthur Sarradin",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0067",
+      "genre": "encyclopedique",
+      "title": "Astrocladus ludwigi",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0068",
+      "genre": "encyclopedique",
+      "title": "Barkly East",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0069",
+      "genre": "encyclopedique",
+      "title": "Burgersdorp",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0070",
+      "genre": "encyclopedique",
+      "title": "Château d'eau de toit",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0071",
+      "genre": "encyclopedique",
+      "title": "Edward Aleksander Raczyński",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0072",
+      "genre": "encyclopedique",
+      "title": "Marko Vego",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0073",
+      "genre": "encyclopedique",
+      "title": "Midipile",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0074",
+      "genre": "encyclopedique",
+      "title": "Mohamed Rassoul Tounkara",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0075",
+      "genre": "encyclopedique",
+      "title": "Phlegra Montes",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0076",
+      "genre": "encyclopedique",
+      "title": "Processus stochastiques et conditions aux limites",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0077",
+      "genre": "encyclopedique",
+      "title": "Saison 2027 de la National Rugby League",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0078",
+      "genre": "encyclopedique",
+      "title": "France aux Jeux olympiques de la jeunesse d'été de 2026",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0079",
+      "genre": "encyclopedique",
+      "title": "Frédéric Van Malleghem",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0080",
+      "genre": "encyclopedique",
+      "title": "Gardiners Island",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0081",
+      "genre": "encyclopedique",
+      "title": "Ghost Mountain (rappeur)",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0082",
+      "genre": "encyclopedique",
+      "title": "Oviloo Tunnilie",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0083",
+      "genre": "encyclopedique",
+      "title": "Championnat d'Éthiopie de football 2026-2027",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0084",
+      "genre": "encyclopedique",
+      "title": "Philip Yancey",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0085",
+      "genre": "encyclopedique",
+      "title": "Processus stochastique continu",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0086",
+      "genre": "encyclopedique",
+      "title": "The Room Two",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0087",
+      "genre": "encyclopedique",
+      "title": "Thomas Baignères (artiste)",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0088",
+      "genre": "encyclopedique",
+      "title": "Joseph Deville Degoutin Bellechasse",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0089",
+      "genre": "encyclopedique",
+      "title": "Matérialisme politique",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0090",
+      "genre": "encyclopedique",
+      "title": "Olivier Miannay",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0091",
+      "genre": "litteraire",
+      "title": "Mayerling",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0092",
+      "genre": "litteraire",
+      "title": "Mayerling",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0093",
+      "genre": "litteraire",
+      "title": "Mayerling",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0094",
+      "genre": "litteraire",
+      "title": "Un mot sur les postes",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0095",
+      "genre": "litteraire",
+      "title": "Yvonne l'Islaise",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0096",
+      "genre": "litteraire",
+      "title": "Yvonne l'Islaise",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0097",
+      "genre": "litteraire",
+      "title": "Yvonne l'Islaise",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0098",
+      "genre": "litteraire",
+      "title": "Considérations générales sur l'état des sciences et des lettres",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0099",
+      "genre": "litteraire",
+      "title": "Considérations générales sur l'état des sciences et des lettres",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0100",
+      "genre": "litteraire",
+      "title": "Considérations générales sur l'état des sciences et des lettres",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0101",
+      "genre": "litteraire",
+      "title": "Observations, pour les sous-fermiers des messageries sur les articles préliminaires au bail des messageries",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0102",
+      "genre": "litteraire",
+      "title": "Guide de l'aviateur",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0103",
+      "genre": "litteraire",
+      "title": "Guide de l'aviateur",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0104",
+      "genre": "litteraire",
+      "title": "Guide de l'aviateur",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0105",
+      "genre": "litteraire",
+      "title": "Instructions sur les droits de messageries",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0106",
+      "genre": "litteraire",
+      "title": "Instructions sur les droits de messageries",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0107",
+      "genre": "litteraire",
+      "title": "Instructions sur les droits de messageries",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0108",
+      "genre": "litteraire",
+      "title": "La messe là-bas",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0109",
+      "genre": "litteraire",
+      "title": "La messe là-bas",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0110",
+      "genre": "litteraire",
+      "title": "La messe là-bas",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0111",
+      "genre": "litteraire",
+      "title": "Simon le pathétique",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0112",
+      "genre": "litteraire",
+      "title": "Simon le pathétique",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0113",
+      "genre": "litteraire",
+      "title": "Simon le pathétique",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0114",
+      "genre": "litteraire",
+      "title": "Le voyage de Nachtigal au Ouadaï",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0115",
+      "genre": "litteraire",
+      "title": "Le voyage de Nachtigal au Ouadaï",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0116",
+      "genre": "litteraire",
+      "title": "Le voyage de Nachtigal au Ouadaï",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0117",
+      "genre": "litteraire",
+      "title": "Histoire d'un cheval de bois",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0118",
+      "genre": "litteraire",
+      "title": "Histoire d'un cheval de bois",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0119",
+      "genre": "litteraire",
+      "title": "Histoire d'un cheval de bois",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0120",
+      "genre": "litteraire",
+      "title": "Le parement et triumphe des dames",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0121",
+      "genre": "litteraire",
+      "title": "Le parement et triumphe des dames",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0122",
+      "genre": "litteraire",
+      "title": "Le parement et triumphe des dames",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0123",
+      "genre": "litteraire",
+      "title": "Œuvres de Froissart: Chroniques, Tome 12, 1386-1389",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0124",
+      "genre": "litteraire",
+      "title": "Œuvres de Froissart: Chroniques, Tome 12, 1386-1389",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0125",
+      "genre": "litteraire",
+      "title": "Œuvres de Froissart: Chroniques, Tome 12, 1386-1389",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0126",
+      "genre": "presse",
+      "title": "Alerte au tsunami au Japon à la suite d'un séisme majeur de magnitude 7,6 dans la région centrale du pays",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0127",
+      "genre": "presse",
+      "title": "Venise : pas plus de 25 personnes par groupe touristique avec guides dans la ville",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0128",
+      "genre": "presse",
+      "title": "Pour Naomi Osaka, jouer à Brisbane est déjà une victoire personnelle",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0129",
+      "genre": "presse",
+      "title": "RDC : élections législatives, 82 candidats écartés pour fraude",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0130",
+      "genre": "presse",
+      "title": "RDC : Gentiny ngobila livré à la justice par l'assemblée provinciale de Kinshasa",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0131",
+      "genre": "presse",
+      "title": "Ukraine : le commandant en chef de l'armée remplacé",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0132",
+      "genre": "presse",
+      "title": "Football : Héritier Luvumbu retiré de son contrat au Rwanda",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0133",
+      "genre": "presse",
+      "title": "RDC : Jean-jacques Mamba rejoint l'alliance fleuve Congo (AFL)",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0134",
+      "genre": "presse",
+      "title": "Le 30 et 31 mars 2024, participez à la Quinzaine des autrices francophones avec Les sans pagEs",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0135",
+      "genre": "presse",
+      "title": "Paris : le tramway T3b prolongé à Porte Dauphine",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0136",
+      "genre": "presse",
+      "title": "France : 13e congrès de la Fédération CFDT Éducation Formation Recherche publiques (SGEN) à Lorient",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0137",
+      "genre": "presse",
+      "title": "Le Bénin accorde une autorisation provisoire de chargement de pétrole nigérien",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0138",
+      "genre": "presse",
+      "title": "Évolution de Helldivers 2 : Réorganisation et Objectifs pour Arrowhead Studios",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0139",
+      "genre": "presse",
+      "title": "France : Emmanuel Macron dissout l'Assemblée nationale",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0140",
+      "genre": "presse",
+      "title": "Législatives françaises : Renaissance lance sa campagne, LR explose, Maréchal accepte l'alliance avec le RN, la gauche s'unit",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0141",
+      "genre": "presse",
+      "title": "Cinéma : l'actrice française Anouk Aimée est morte à 92 ans",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0142",
+      "genre": "presse",
+      "title": "Paris : le 29 juin 2024, Les sans pagEs organisent un atelier à la librairie Violette and Co",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0143",
+      "genre": "presse",
+      "title": "Paris : le préfet de police de Paris interdit la manifestation de l'Action antifasciste Paris-Banlieue devant l'Assemblée nationale",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0144",
+      "genre": "presse",
+      "title": "Coup de théâtre : le NFP en tête, loin de la majorité absolue",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0145",
+      "genre": "presse",
+      "title": "Niger : premier sommet de l'Alliance des États du Sahel (AES) à Niamey",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0146",
+      "genre": "presse",
+      "title": "Argentine : Javier Milei lance un « pacte en dix points » pour redresser l'économie",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0147",
+      "genre": "presse",
+      "title": "Sondage : les Français préféreraient un gouvernement Ensemble - LR - gauche sans LFI",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0148",
+      "genre": "presse",
+      "title": "Pologne : plus de la moitié des personnes interrogées souhaitent l'abolition de la peine de prison pour avoir pratiqué ou aidé à pratiquer un avortement, selon un sondage",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0149",
+      "genre": "presse",
+      "title": "Une panne informatique survient, touchant de nombreux systèmes informatiques dans le monde",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0150",
+      "genre": "presse",
+      "title": "Jeux olympiques d'été de 2024 : L'équipe ukrainienne remporte l'épreuve féminine de sabre par équipes",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0151",
+      "genre": "presse",
+      "title": "JO de Paris : le top 50 des pays au 10 août",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0152",
+      "genre": "presse",
+      "title": "France : le drapeau palestinien sera porté en relais dans toutes les villes du pays dans le cadre de la campagne nationale Drapeau de la Libération",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0153",
+      "genre": "presse",
+      "title": "Guinée: Claude Pivi, le furgitif le plus recherché, emprisonné",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0154",
+      "genre": "presse",
+      "title": "Liban: 37 morts après les explosions d'appareils du Hezbollah",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0155",
+      "genre": "presse",
+      "title": "Moyen-Orient: Israël tue des responsables du Hezbollah à Beyrouth",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0156",
+      "genre": "presse",
+      "title": "Diplomatie : Emmanuel Macron appelle au retrait du M23 et des troupes rwandaises en RDC",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0157",
+      "genre": "presse",
+      "title": "CPI : réactivation des enquêtes sur les crimes commis en république démocratique du Congo",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0158",
+      "genre": "presse",
+      "title": "Canada : le Canton Centre Wellington développe un nouveau plan de mobilités douces",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0159",
+      "genre": "presse",
+      "title": "France : Michel Barnier active le 49.3 sur le budget de la Sécurité sociale",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0160",
+      "genre": "presse",
+      "title": "Paris : la Ville de Paris rétablit sa subvention au collège/lycée privé Stanislas",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0161",
+      "genre": "presse",
+      "title": "Le YouTubeur Kian Brose annonce vouloir poursuivre Minecraft en justice",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0162",
+      "genre": "presse",
+      "title": "Le premier tour de l'élection présidentielle en Roumanie annulé",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0163",
+      "genre": "presse",
+      "title": "Les dirigeants du monde entier assistent à la réouverture de la cathédrale Notre-Dame de Paris, cinq ans après l'incendie",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0164",
+      "genre": "presse",
+      "title": "Canada : le gouvernement fédéral intervient pour mettre fin à la grève des employés de Postes Canada",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0165",
+      "genre": "presse",
+      "title": "L’UNESCO a cartographié 4500 espèces marines grâce à l’ADN environnemental",
+      "recouvrement": 0.007
+    },
+    {
+      "id": "validation-0166",
+      "genre": "presse",
+      "title": "Allemagne : une voiture fonce dans un marché de Noël à Magdebourg",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0167",
+      "genre": "presse",
+      "title": "Le gouvernement Bayrou dévoilé : Élisabeth Borne, Manuel Valls et Gérald Darmanin parmi les ministres",
+      "recouvrement": 0.0031
+    },
+    {
+      "id": "validation-0168",
+      "genre": "presse",
+      "title": "Justin Trudeau annonce sa démission comme premier ministre du Canada",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0169",
+      "genre": "presse",
+      "title": "Los Angeles : incendie dévastateur en cours",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0170",
+      "genre": "presse",
+      "title": "Los Angeles : un bombardier d'eau endommagé par un drone",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0171",
+      "genre": "presse",
+      "title": "France : une collision entre deux rames de tramways à Strasbourg",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0172",
+      "genre": "presse",
+      "title": "Tchad : la France livre une deuxième base militaire au Tchad",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0173",
+      "genre": "presse",
+      "title": "Croatie : victoire du président sortant Zoran Milanovic",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0174",
+      "genre": "presse",
+      "title": "Santé : La Réunion en état d’alerte avec le retour de chikungunya",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0175",
+      "genre": "presse",
+      "title": "Groenland : le Premier ministre prêt à discuter avec Donald Trump, mais en affirmant que son pays ne sera pas américain",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0176",
+      "genre": "presse",
+      "title": "France : le déboulonnage de la statue de Jeanne d’Arc à Nice dès son installation",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0177",
+      "genre": "presse",
+      "title": "Grande-Bretagne : vers une nouvelle enquête sur Jack l’éventreur",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0178",
+      "genre": "presse",
+      "title": "Le réalisateur américain David Lynch est décédé",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0179",
+      "genre": "presse",
+      "title": "Football : le Barça perd de précieux points face à Getafe",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0180",
+      "genre": "presse",
+      "title": "Football : le Real Madrid renverse Las Palmas et prend la tête du championnat",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0181",
+      "genre": "presse",
+      "title": "États-Unis : l’interdiction de TikTok validée par la Cour suprême",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0182",
+      "genre": "presse",
+      "title": "États-Unis : arrestation massive de migrants illégaux le lendemain de l’investiture de Donald Trump",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0183",
+      "genre": "presse",
+      "title": "France : manifestation des royalistes en hommage à Louis XVI à Paris",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0184",
+      "genre": "presse",
+      "title": "États-Unis : Donald Trump signe plusieurs décrets le jour de son investiture",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0185",
+      "genre": "presse",
+      "title": "France : un professeur menacé de mort par une collégienne pour avoir montré des caricatures",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0186",
+      "genre": "presse",
+      "title": "France : la difficulté de vivre pour les témoins protégés",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0187",
+      "genre": "presse",
+      "title": "Commémoration des 80 ans de l’ouverture d’Auschwitz",
+      "recouvrement": 0.0021
+    },
+    {
+      "id": "validation-0188",
+      "genre": "presse",
+      "title": "Football : le Barça s'impose largement contre Valence et se rapproche de l'Atlético",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0189",
+      "genre": "presse",
+      "title": "France : un adolescent tué pour son portable à Paris, l’un des suspect avoue le meurtre",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0190",
+      "genre": "presse",
+      "title": "États-Unis : collision en plein vol entre un avion American Airlines et un hélicoptère militaire",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0191",
+      "genre": "presse",
+      "title": "États-Unis : un assaillant du Capitole gracié abattu par la police pour un refus d'obtempérer",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0192",
+      "genre": "presse",
+      "title": "La France met fin à sa présence militaire au Tchad, marquant ainsi sa sortie définitive du Sahel",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0193",
+      "genre": "presse",
+      "title": "France : la possibilité d’un conflit armé selon le patron de la gendarmerie",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0194",
+      "genre": "presse",
+      "title": "Guadeloupe : un élève sanctionné pour un salut nazi devant des élèves allemands",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0195",
+      "genre": "presse",
+      "title": "États-Unis : le FBI menacé par une purge de la part de Donald Trump",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0196",
+      "genre": "presse",
+      "title": "Suède : fusillade dans une école d’Örebro",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0197",
+      "genre": "presse",
+      "title": "Santé : pénurie de médicaments à base de quétiapine",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0198",
+      "genre": "presse",
+      "title": "Un citoyen irlandais et 13 autres personnes emprisonnées pour une manifestation au Togo",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0199",
+      "genre": "presse",
+      "title": "France : panique dans la nuit suite à l'enclenchement d'une alarme dans la métropole de Rouen",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0200",
+      "genre": "presse",
+      "title": "L'ancien ministre des Finances du Ghana est recherché",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0201",
+      "genre": "presse",
+      "title": "Blocus au lycée Racine à Paris : des élèves dénoncent les violences d'un professeur",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0202",
+      "genre": "presse",
+      "title": "Football : le Real Madrid se met en danger après son faux pas à Osasuna",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0203",
+      "genre": "presse",
+      "title": "Paris : le lycée Chaptal met en vente 300 places pour la Nuit du Musée Chaptal",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0204",
+      "genre": "presse",
+      "title": "Mali : l'effondrement d'une mine d'or fait de nombreuses victimes",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0205",
+      "genre": "presse",
+      "title": "République démocratique du Congo : le M23 et l'armée rwandaise s'emparent de Bukavu",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0206",
+      "genre": "presse",
+      "title": "Afrique du Sud : le premier imam ouvertement gay au monde abattu",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0207",
+      "genre": "presse",
+      "title": "Togo : le parti de Faure Gnassingbé remporte une large victoire aux élections sénatoriales",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0208",
+      "genre": "presse",
+      "title": "Cinéma : décès de Souleymane Cissé",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0209",
+      "genre": "presse",
+      "title": "Côte d'Ivoire : la France cède sa dernière base militaire",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0210",
+      "genre": "presse",
+      "title": "Nice : manifestation pour le troisième anniversaire de l'invasion de l'Ukraine par la Russie",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0211",
+      "genre": "presse",
+      "title": "République démocratique du Congo : le président prévoit un gouvernement d’union pour résoudre la crise",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0212",
+      "genre": "presse",
+      "title": "Soudan du Sud : une épidémie de choléra tue 58 personnes en 3 jours",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0213",
+      "genre": "presse",
+      "title": "Tunisie : huit personnes condamnées à mort pour le meurtre d’un dirigeant de l’opposition",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0214",
+      "genre": "presse",
+      "title": "République démocratique du Congo : au moins 11 morts après une explosion meurtrière lors d'un rassemblement rebelle",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0215",
+      "genre": "presse",
+      "title": "Soudan du Sud : attaque contre un hélicoptère de l’ONU, de nombreux morts",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0216",
+      "genre": "presse",
+      "title": "Zambie : une marée noire dans la rivière Kafue menace des millions de personnes",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0217",
+      "genre": "presse",
+      "title": "Retour sur l'attaque terroriste du Crocus Hall en Russie il y a 1 an",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0218",
+      "genre": "presse",
+      "title": "Paris : rassemblement contre l'extrême droite en opposition au meeting du Rassemblement national et manifestation en soutien à la Palestine",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0219",
+      "genre": "presse",
+      "title": "La Cour suprême des États-Unis autorise provisoirement l'exclusion des personnes transgenres de l'armée",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0220",
+      "genre": "presse",
+      "title": "L'initiative citoyenne européenne contre les thérapies de conversion atteint les seuils minimaux dans 7 pays",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0221",
+      "genre": "presse",
+      "title": "Occupation de la place de la République à Paris pour la fin du blocus à Gaza",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0222",
+      "genre": "presse",
+      "title": "LFI annonce le dépôt d’une motion de censure dès la rentrée parlementaire contre le gouvernement Bayrou",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0223",
+      "genre": "presse",
+      "title": "Paris : blocus au lycée Turgot en soutien à la Global Sumud Flotilla",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0224",
+      "genre": "presse",
+      "title": "Miss France 2026 : liste des 30 candidates régionales",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0225",
+      "genre": "presse",
+      "title": "Le RN et LFI déposent une motion de censure contre le gouvernement",
+      "recouvrement": 0.0317
+    },
+    {
+      "id": "validation-0226",
+      "genre": "presse",
+      "title": "Coupure majeure chez AWS : une panne DNS paralyse une partie du Web mondial",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0227",
+      "genre": "presse",
+      "title": "Canada : La tournée « Kanada » de Korn, Gojira et Loathe apportent de la musique « heavy metal » à plus que 100 000 spectateurs à travers le Canada",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0228",
+      "genre": "presse",
+      "title": "Eurovision 2026 : La Rai propose d’inviter un artiste palestinien à Vienne",
+      "recouvrement": 0.0
+    },
+    {
+      "id": "validation-0229",
+      "genre": "presse",
+      "title": "Actualités le 31 mars",
+      "recouvrement": 0.0
+    }
+  ]
+}

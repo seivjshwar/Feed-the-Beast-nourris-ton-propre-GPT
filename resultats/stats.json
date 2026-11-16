@@ -1,0 +1,284 @@
+{
+  "duree_s": 1941,
+  "identification_langue": "fasttext-lid176",
+  "brut": {
+    "moliere": {
+      "documents": 25,
+      "mo": 1.54
+    },
+    "wikipedia": {
+      "documents": 41578,
+      "mo": 170.0
+    },
+    "gutenberg": {
+      "documents": 561,
+      "mo": 220.12
+    },
+    "an": {
+      "documents": 11702,
+      "mo": 243.38
+    },
+    "fineweb_news": {
+      "documents": 35982,
+      "mo": 110.0
+    },
+    "fineweb": {
+      "documents": 20673,
+      "mo": 80.05
+    },
+    "cc": {
+      "documents": 47083,
+      "mo": 400.01
+    }
+  },
+  "nettoye": {
+    "moliere": {
+      "documents": 25,
+      "mo": 1.54
+    },
+    "wikipedia": {
+      "documents": 40639,
+      "mo": 169.86
+    },
+    "gutenberg": {
+      "documents": 550,
+      "mo": 206.61
+    },
+    "an": {
+      "documents": 11681,
+      "mo": 243.38
+    },
+    "fineweb_news": {
+      "documents": 35953,
+      "mo": 108.58
+    },
+    "fineweb": {
+      "documents": 20558,
+      "mo": 77.49
+    },
+    "cc": {
+      "documents": 1764,
+      "mo": 8.14
+    }
+  },
+  "rejets_nettoyage": {
+    "moliere": {},
+    "wikipedia": {
+      "trop_court": 939,
+      "encodage_repare": 47
+    },
+    "gutenberg": {
+      "encodage_repare": 149,
+      "pas_francais": 11
+    },
+    "an": {
+      "trop_court": 21
+    },
+    "fineweb_news": {
+      "trop_court": 20,
+      "pas_francais": 9,
+      "encodage_repare": 3
+    },
+    "fineweb": {
+      "pas_francais": 69,
+      "encodage_repare": 35,
+      "trop_court": 46
+    },
+    "cc": {
+      "pas_francais": 41454,
+      "encodage_repare": 7875,
+      "trop_court": 3865
+    }
+  },
+  "complet": {
+    "moliere": {
+      "documents": 25,
+      "mo": 1.54
+    },
+    "wikipedia": {
+      "documents": 40639,
+      "mo": 169.86
+    },
+    "gutenberg": {
+      "documents": 335,
+      "mo": 125.71
+    },
+    "an": {
+      "documents": 11681,
+      "mo": 243.38
+    },
+    "fineweb_news": {
+      "documents": 35467,
+      "mo": 108.05
+    },
+    "fineweb": {
+      "documents": 20057,
+      "mo": 77.11
+    },
+    "cc": {
+      "documents": 1460,
+      "mo": 6.96
+    }
+  },
+  "rejets_traitement": {
+    "moliere": {},
+    "wikipedia": {
+      "pii_email": 4,
+      "pii_ip": 40,
+      "pii_telephone": 11
+    },
+    "gutenberg": {
+      "doublon_exact": 214,
+      "quasi_doublon": 1,
+      "pii_ip": 5
+    },
+    "an": {
+      "pii_telephone": 1
+    },
+    "fineweb_news": {
+      "quasi_doublon": 2,
+      "pii_telephone": 645,
+      "pii_email": 325,
+      "qualite_points_suspension": 200,
+      "qualite_nb_mots": 279,
+      "pii_ip": 20,
+      "qualite_symboles": 1,
+      "qualite_puces": 4
+    },
+    "fineweb": {
+      "quasi_doublon": 1,
+      "qualite_points_suspension": 164,
+      "qualite_nb_mots": 322,
+      "pii_telephone": 594,
+      "pii_email": 904,
+      "qualite_puces": 11,
+      "pii_ip": 117,
+      "qualite_pas_de_mots_outils": 2,
+      "qualite_symboles": 1
+    },
+    "cc": {
+      "doublon_exact": 7,
+      "quasi_doublon": 15,
+      "qualite_peu_de_mots": 199,
+      "pii_email": 186,
+      "qualite_nb_mots": 35,
+      "pii_telephone": 412,
+      "qualite_points_suspension": 26,
+      "qualite_symboles": 8,
+      "qualite_pas_de_mots_outils": 6,
+      "qualite_lignes_repetees": 3,
+      "pii_ip": 31,
+      "qualite_longueur_mots": 5
+    }
+  },
+  "melanges": {
+    "brut": {
+      "total": {
+        "documents": 66410,
+        "mo": 442.89
+      },
+      "par_source": {
+        "wikipedia": {
+          "documents": 27679,
+          "mo": 112.5
+        },
+        "gutenberg": {
+          "documents": 238,
+          "mo": 94.72
+        },
+        "moliere": {
+          "documents": 100,
+          "mo": 6.14
+        },
+        "an": {
+          "documents": 5197,
+          "mo": 108.02
+        },
+        "fineweb_news": {
+          "documents": 22210,
+          "mo": 67.5
+        },
+        "fineweb": {
+          "documents": 8335,
+          "mo": 31.51
+        },
+        "cc": {
+          "documents": 2651,
+          "mo": 22.5
+        }
+      }
+    },
+    "nettoye": {
+      "total": {
+        "documents": 67925,
+        "mo": 442.84
+      },
+      "par_source": {
+        "wikipedia": {
+          "documents": 27042,
+          "mo": 112.5
+        },
+        "gutenberg": {
+          "documents": 246,
+          "mo": 94.66
+        },
+        "moliere": {
+          "documents": 100,
+          "mo": 6.14
+        },
+        "an": {
+          "documents": 5175,
+          "mo": 108.01
+        },
+        "fineweb_news": {
+          "documents": 22425,
+          "mo": 67.5
+        },
+        "fineweb": {
+          "documents": 8060,
+          "mo": 31.5
+        },
+        "cc": {
+          "documents": 4877,
+          "mo": 22.52
+        }
+      }
+    },
+    "complet": {
+      "total": {
+        "documents": 67266,
+        "mo": 442.76
+      },
+      "par_source": {
+        "wikipedia": {
+          "documents": 27042,
+          "mo": 112.5
+        },
+        "gutenberg": {
+          "documents": 251,
+          "mo": 94.58
+        },
+        "moliere": {
+          "documents": 100,
+          "mo": 6.14
+        },
+        "an": {
+          "documents": 5187,
+          "mo": 108.0
+        },
+        "fineweb_news": {
+          "documents": 22118,
+          "mo": 67.5
+        },
+        "fineweb": {
+          "documents": 7830,
+          "mo": 31.5
+        },
+        "cc": {
+          "documents": 4738,
+          "mo": 22.53
+        }
+      }
+    }
+  }
+}
