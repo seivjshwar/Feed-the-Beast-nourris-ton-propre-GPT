@@ -213,28 +213,59 @@ def an():
 
 
 # --- Common Crawl ------------------------------------------------------------------------------
-def cc():
+CC_CRAWLS = ["CC-MAIN-2024-51", "CC-MAIN-2024-46", "CC-MAIN-2024-42", "CC-MAIN-2024-38", "CC-MAIN-2024-33"]
+HEADERS = {"User-Agent": "feed-the-beast-piscine/1.0 (projet etudiant ECE Paris)"}
+
+
+def cc_get(url, stream=False, tries=6):
+    """Common Crawl limite le débit (réponses 503 / 403 « SlowDown ») : on réessaie en attendant."""
     import requests
+    for k in range(tries):
+        r = requests.get(url, headers=HEADERS, stream=stream, timeout=600)
+        if r.status_code == 200:
+            return r
+        log(f"  {url[-60:]} -> HTTP {r.status_code}, nouvel essai dans {5 * 2 ** k} s")
+        r.close()
+        time.sleep(5 * 2 ** k)
+    raise RuntimeError(f"Common Crawl inaccessible : {url} (HTTP {r.status_code})")
+
+
+def cc():
     from warcio.archiveiterator import ArchiveIterator
     base = "https://data.commoncrawl.org/"
-    paths = gzip.decompress(requests.get(f"{base}crawl-data/{C.CC_CRAWL}/wet.paths.gz", timeout=120).content)
-    paths = paths.decode().split()
+    paths, crawl = None, None
+    for crawl in [C.CC_CRAWL] + [c for c in CC_CRAWLS if c != C.CC_CRAWL]:
+        try:
+            paths = gzip.decompress(cc_get(f"{base}crawl-data/{crawl}/wet.paths.gz", tries=3).content).decode().split()
+            break
+        except Exception as e:  # noqa: BLE001
+            log(f"  {crawl} indisponible : {e!r}"[:200])
+    if not paths:
+        raise RuntimeError("aucun crawl Common Crawl accessible")
+    log(f"crawl {crawl} : {len(paths)} fichiers WET")
     picks = [paths[i * (len(paths) // C.CC_N_FILES)] for i in range(C.CC_N_FILES)]   # étalés dans le crawl
+    C.DOWNLOADS.mkdir(parents=True, exist_ok=True)
     out, got = [], 0
-    for p in picks:
-        log("WET", p)
-        with requests.get(base + p, stream=True, timeout=600) as r:
-            r.raise_for_status()
-            for rec in ArchiveIterator(r.raw):
+    for k, p in enumerate(picks):
+        local = C.DOWNLOADS / f"cc_{k}.warc.wet.gz"
+        if not local.exists():
+            log("WET", p)
+            with cc_get(base + p, stream=True) as r, open(local, "wb") as f:
+                for chunk in r.iter_content(1 << 20):
+                    f.write(chunk)
+        with open(local, "rb") as f:
+            for rec in ArchiveIterator(f):
                 if rec.rec_type != "conversion":
                     continue
                 t = rec.content_stream().read().decode("utf-8", "replace")
-                out.append({"source": "cc", "url": rec.rec_headers.get_header("WARC-Target-URI"),
+                out.append({"source": "cc", "crawl": crawl,
+                            "url": rec.rec_headers.get_header("WARC-Target-URI"),
                             "cc_lang": rec.rec_headers.get_header("WARC-Identified-Content-Language"),
                             "text": t})
                 got += nbytes(t)
                 if got >= C.COLLECT_MB["cc"] * 1e6:
                     break
+        log(f"  Common Crawl : {len(out)} pages, {got/1e6:.0f} Mo")
         if got >= C.COLLECT_MB["cc"] * 1e6:
             break
     return write_docs(C.RAW / "cc.jsonl.gz", out)
