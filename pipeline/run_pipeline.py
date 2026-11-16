@@ -3,6 +3,7 @@
     python -m pipeline.run_pipeline                      # tout : collecte -> nettoyage -> traitement -> mélanges
     python -m pipeline.run_pipeline --steps clean,full,mix   # sans re-télécharger
     python -m pipeline.run_pipeline --scale 0.05         # essai rapide (5 % des volumes)
+    python -m pipeline.run_pipeline --mix all            # + le mélange v2 (data/mix/complet_v2.jsonl)
 
 Sorties :
     data/raw/      collecte brute, une source par fichier
@@ -112,10 +113,11 @@ def sample_source(docs, quota, rng):
     return out
 
 
-def build_mix(folder, variant, stats, scale, tail):
+def build_mix(folder, variant, stats, scale, tail, shares=None):
+    shares = shares or C.MIX_SHARES
     rng = random.Random(C.SEED)
-    pools = {s: read_docs(folder / f"{s}.jsonl.gz") for s in C.MIX_SHARES}
-    avail = {s: share for s, share in C.MIX_SHARES.items() if pools[s]}
+    pools = {s: read_docs(folder / f"{s}.jsonl.gz") for s in shares}
+    avail = {s: share for s, share in shares.items() if pools[s]}
     total_share = sum(avail.values())
     target = C.MIX_TARGET_MB * 1e6 * scale
     body, end, comp = [], [], {}
@@ -139,10 +141,13 @@ def build_mix(folder, variant, stats, scale, tail):
     log(f"mélange {variant}: {size(docs)}")
 
 
-def step_mix(stats, scale):
-    build_mix(C.RAW, "brut", stats, scale, tail=False)
-    build_mix(C.CLEAN, "nettoye", stats, scale, tail=False)
-    build_mix(C.FULL, "complet", stats, scale, tail=True)
+def step_mix(stats, scale, mix="v1"):
+    if mix in ("v1", "all"):
+        build_mix(C.RAW, "brut", stats, scale, tail=False)
+        build_mix(C.CLEAN, "nettoye", stats, scale, tail=False)
+        build_mix(C.FULL, "complet", stats, scale, tail=True)
+    if mix in ("v2", "all"):
+        build_mix(C.FULL, "complet_v2", stats, scale, tail=True, shares=C.MIX_SHARES_V2)
 
 
 # --- Échantillon pour mesurer le filtre de langue -----------------------------------------
@@ -214,6 +219,8 @@ def main():
     p.add_argument("--steps", default="collect,clean,full,mix")
     p.add_argument("--sources", default=",".join(SOURCES))
     p.add_argument("--scale", type=float, default=1.0, help="multiplie tous les volumes (essai rapide)")
+    p.add_argument("--mix", default="v1", choices=["v1", "v2", "all"],
+                   help="v1 : brut, nettoye, complet (ablation) ; v2 : complet_v2 ; all : les quatre")
     a = p.parse_args()
     if a.scale != 1.0:
         for k in C.COLLECT_MB:
@@ -231,7 +238,7 @@ def main():
     if "full" in steps:
         step_full(sources, stats)
     if "mix" in steps:
-        step_mix(stats, a.scale)
+        step_mix(stats, a.scale, a.mix)
     stats["duree_s"] = round(time.time() - t0)
     write_stats(stats)
     log(f"terminé en {time.time() - t0:.0f} s — voir pipeline/STATS.md")

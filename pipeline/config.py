@@ -58,6 +58,17 @@ MIX_SHARES = {
     "fineweb": 0.07,        # web général
     "cc": 0.05,             # Common Crawl traité par notre pipeline
 }
+# Mélange v2 (après l'ablation) : plus de littérature (genre le plus difficile, BPB 1,47) et de
+# presse, moins de Common Crawl répété. Généré en plus de v1 avec `--mix v2`.
+MIX_SHARES_V2 = {
+    "wikipedia": 0.25,
+    "gutenberg": 0.27,
+    "moliere": 0.02,
+    "an": 0.22,
+    "fineweb_news": 0.18,
+    "fineweb": 0.04,
+    "cc": 0.02,
+}
 MIX_TARGET_MB = 450         # ~100M tokens avec un BPE de 8 192 (≈ 4,4 octets par token)
 MAX_REPEAT = 4              # une source trop petite est répétée au plus 4 fois
 TAIL_FRACTION = 0.10        # les derniers 10 % du flux : données les plus propres (fin d'entraînement)
